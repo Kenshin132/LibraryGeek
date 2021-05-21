@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/imagegall.css">
+  <link rel="icon" href="logo2.png">
+
+</head>
+<body>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Library</a>
+  <a href="cart.html">Bookshelf</a>
+  <a href="about.html">About us</a>
+  <a href="login.html">Login/Signup</a>
+  <img src="logo.png" class="sidebarlogo">
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<!-- partial:index.partial.html -->
+<main class="page-content">
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Fiction</h2>
+      <p class="copy">Check out our list of the best Fiction books to read this year.</p>
+      <a href="fiction.html"><button class="btn">View Books</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Non Fiction</h2>
+      <p class="copy">Check out our list of the best Non fiction books to read this year.</p>
+      <a href="nonfiction.html"><button class="btn">View Books</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Drama</h2>
+      <p class="copy">Check out our list of the best Drama books to read this year.</p>
+      <a href="#drama.html"><button class="btn">View Books</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Poetry</h2>
+      <p class="copy">Check out our list of the best Poetry books to read this year.</p>
+      <a href="#poetry.html"><button class="btn">View Books</button></a>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  
+</body>
+</html>

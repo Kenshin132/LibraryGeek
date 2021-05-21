@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Library Geek</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/styleShelf.css">
+  <link rel="icon" href="logo2.png">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');</style>
+
+</head>
+<body>
+<body>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Library</a>
+  <a href="cart.html">Bookshelf</a>
+  <a href="about.html">About us</a>
+  <a href="login.html">Login/Signup</a>
+  <img src="logo.png" class="sidebarlogo">
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<h1>Your Bookshelf</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="image/atlwcs.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">All The Light We Cannot See</div>
+      <p class="product-description">WINNER OF THE PULITZER PRIZE
+From the highly acclaimed, multiple award-winning Anthony Doerr, the beautiful, stunningly ambitious instant New York Times bestseller about a blind French girl and a German boy whose paths collide in occupied France as both try to survive the devastation of World War II.</p>
+    </div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://www.abebooks.com/images/books/essential-non-fiction/hiroshima.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Hiroshima</div>
+      <p class="product-description">On August 6, 1945, Hiroshima was destroyed by the first atom bomb ever dropped on a city. This book, John Hersey's journalistic masterpiece, tells what happened on that day. Told through the memories of survivors, this timeless, powerful and compassionate document has become a classic "that stirs the conscience of humanity" (The New York Times).</p>
+    </div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+  </div>
+      
+      <a href="thankyou.html"><button class="checkout">Borrow</button></a>
+</div>
+
+
+
+</body>
+</html>

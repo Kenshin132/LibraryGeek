@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Thank you</title>
+  <link rel="stylesheet" href="css/thankyou.css">
+  <link rel="icon" href="logo2.png">
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Library</a>
+  <a href="cart.html">Bookshelf</a>
+  <a href="about.html">About us</a>
+  <a href="login.html">Login/Signup</a>
+  <img src="logo.png" class="sidebarlogo">
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<!-- partial:index.partial.html -->
+<div class=content>
+  <div class="wrapper-1">
+    <div class="wrapper-2">
+      <h1>Thank you !</h1>
+      <p>Thanks for borrowing a book.  </p>
+      <p>you should receive a confirmation email soon  </p>
+      <a href="index.html"><button class="go-home">
+      go home
+      </button></a>
+    </div>
+    <div class="footer-like">
+      <p>Email not received?
+       <a href="#">Click here to send again</a>
+      </p>
+    </div>
+</div>
+</div>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+<!-- partial -->
+  
+</body>
+</html>

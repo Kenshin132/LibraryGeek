@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="css/prod1.css">
+	<link rel="icon" href="logo2.png">
+</head>
+<body>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Library</a>
+  <a href="cart.html">Bookshelf</a>
+  <a href="about.html">About us</a>
+  <a href="login.html">Login/Signup</a>
+  <img src="logo.png" class="sidebarlogo">
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    <div class="container">
+
+        <div class="card">
+            <div id="shopping">
+                <i class="fas fa-cart-plus"><sup id="items-added"></sup></i>
+            </div>
+            <div class="images">
+                <div class="slider"><img class="size" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/All_the_Light_We_Cannot_See_%28Doerr_novel%29.jpg/220px-All_the_Light_We_Cannot_See_%28Doerr_novel%29.jpg" alt=""></div>
+            </div>
+            <div class="infos">
+                <h1 id="info-content">All The Light We Cannot See</h1>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div id="more-infos">
+                    <h2 id="info-content">Description</h5>
+                </div>
+                <div id="info-content">
+                    <p>Anthony Doerr's astonishing new novel "All The Light We Cannot See" follows the complex arcs of two such invisible lines through the lives of Werner Pfennig, an orphan boy in pre-World War II Germany and Marie-Laure Leblanc, a blind girl living in Paris with her father.</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="myFunction()"><i class="fas fa-shopping-cart"></i>ADD</button>					
+                    <a href="pdf/all_the_light_we_cannot_see.pdf"><button>READ NOW</button></a>
+					<a href="reviews.html"><button >REVIEWS</button></a>
+                </div>
+            </div>
+        </div>
+		
+    </div>
+    <script src="js/popup.js"></script>
+</body>
+</html> 

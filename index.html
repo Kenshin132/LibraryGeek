@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<title>Library Geek</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="logo2.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+ <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Library Geek</title>
+</head>
+
+<body>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Library</a>
+  <a href="cart.html">Bookshelf</a>
+  <a href="about.html">About us</a>
+  <a href="login.html">Login/Signup</a>
+  <img src="logo.png" class="sidebarlogo">
+</div>
+
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<img src="logo.png" class="center">
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Post Slider -->
+    <div class="post-slider">
+      <h1 class="slider-title">Featured Books</h1>
+      <i class="fas fa-chevron-left prev"></i>
+      <i class="fas fa-chevron-right next"></i>
+
+      <div class="post-wrapper">
+
+        <div class="post">
+          <img src="https://static.prod.abebookscdn.com/cdn/com/images/100-books/Vegetarian,%20The.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">The Vegetarian</a></h4>
+            <i class="far fa-user"> Han Kang</i>
+          </div>
+        </div>
+
+        <div class="post">
+          <a href="prod10.html"><img src="https://www.abebooks.com/images/books/essential-non-fiction/hiroshima.jpg" alt="" class="slider-image"></a>
+          <div class="post-info">
+            <h4><a href="single.html">Hiroshima</a></h4>
+            <i class="far fa-user"> John Heresy</i>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="https://media.hearstapps.com/vader-prod.s3.amazonaws.com/1555343862-51M-w5S0J9L.jpg?crop=333,499.5,offset-x50,offset-y0,safe&auto=webp&optimize=medium&width=768" alt="" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Soft Science</a></h4>
+            <i class="far fa-user"> Franny Choi</i>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="https://www.adazing.com/wp-content/uploads/2019/03/51ompznRZKL._SX320_BO1204203200_.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Then She Was Gone: A Novel</a></h4>
+            <i class="far fa-user"> Lisa Jewell</i>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="https://www.adazing.com/wp-content/uploads/2019/03/51iAx7x3HLL.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Before We Were Yours</a></h4>
+            <i class="far fa-user"> Lisa Wingate</i>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!-- // Post Slider -->
+
+    <!-- Content -->
+    <div class="content clearfix">
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <h1 class="recent-post-title">Recently Read</h1>
+
+        <div class="post clearfix">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529591917l/40603587._SX318_.jpg" alt="" class="post-image">
+          <div class="post-preview">
+            <h2><a href="single.hmtl">The Last Wish</a></h2>
+            <i class="far fa-user"> Andrzej Sapkowski</i>
+            &nbsp;            <p class="preview-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem optio possimus a inventore maxime laborum.
+            </p>
+            <a href="#" class="btn read-more">Read</a>
+          </div>
+        </div>
+
+        <div class="post clearfix">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589998653l/6043781._SX318_.jpg" alt="" class="post-image">
+          <div class="post-preview">
+            <h2><a href="single.hmtl">Blood of Elves</a></h2>
+            <i class="far fa-user"> Andrzej Sapkowski</i>
+
+
+            <p class="preview-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem optio possimus a inventore maxime laborum.
+            </p>
+            <a href="#" class="btn read-more">Read</a>
+          </div>
+        </div>
+        <div class="post clearfix">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474171184l/136251._SY475_.jpg" alt="" class="post-image">
+          <div class="post-preview">
+            <h2><a href="single.hmtl">Harry Potter and the Deathly Hallows</a></h2>
+            <i class="far fa-user"> J. K. Rowling</i>
+          
+            <p class="preview-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem optio possimus a inventore maxime laborum.
+            </p>
+            <a href="#" class="btn read-more">Read</a>
+          </div>
+        </div>
+        <div class="post clearfix">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587697303l/1._SX318_.jpg" alt="" class="post-image">
+          <div class="post-preview">
+            <h2><a href="single.hmtl">Harry Potter and the Half-Blood Prince</a></h2>
+            <i class="far fa-user"> J. K. Rowling</i>
+  
+            <p class="preview-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem optio possimus a inventore maxime laborum.
+            </p>
+            <a href="#" class="btn read-more">Read</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- // Main Content -->
+
+      <div class="side">
+
+        <div class="section search">
+          <h2 class="section-title">Search</h2>
+          <form action="index.html" method="post">
+            <input type="text" name="search-term" class="text-input" placeholder="Search...">
+          </form>
+        </div>
+
+
+        <div class="section topics">
+          <h2 class="section-title">Topics</h2>
+          <ul>
+            <li><a href="fiction.html">Fiction</a></li>
+            <li><a href="nonfiction.html">Non-Fiction</a></li>
+            <li><a href="#drama.html">Drama</a></li>
+            <li><a href="#poetry.html">Poetry</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- // Content -->
+
+  </div>
+  <!-- // Page Wrapper -->
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section about">
+        <h1 class="logo-text"><span>Library</span>Geek</h1>
+        <p>
+          Library Geek is a fictional Online Library conceived for the purpose of a Final Project.
+        </p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+          <span><i class="fas fa-envelope"></i> &nbsp; sheesh@gmail.com</span>
+        </div>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section contact-form">
+        <h2>Contact us</h2>
+        <br>
+        <form action="index.html" method="post">
+          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+          <button type="submit" class="btn btn-big contact-btn">
+            <i class="fas fa-envelope"></i>
+            Send
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // footer -->
+
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

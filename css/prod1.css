@@ -1,0 +1,228 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url( ../bar.jpg);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#info-content{
+	margin-left: 25px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+.size{
+	margin-left:25px;
+	margin-top:70px;
+	width:333px;
+	height:482px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100%;
+    padding: 20px;
+}
+
+
+.card {
+    background-color:#F9D8A7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.infos h1 {
+    display: none;
+}
+.imgs {
+    cursor: pointer;
+}
+
+
+.buttons {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    margin: 10px;
+    width: 180px;
+    padding: 5px;
+    font: inherit;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.buttons button:nth-child(1) i {
+    margin-right: 10px;
+}
+
+.buttons button:hover {
+    color: black;
+    background-color:#ffb26b;
+}
+
+
+
+
+    body {
+        display: flex;
+        
+		font-family: Lora;
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url( ../background.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: local;
+		background-attachment:fixed;
+		overflow:hidden;
+
+    }
+
+    .container {
+        width: 75%;
+        height: 80%;
+        display: flex;
+        border-radius: 20px;
+    }
+
+    .card {
+        flex-direction: row;
+        height: 85%;
+        width: 80%;
+        border-radius: 15px;
+		margin-left:200px;
+		margin-top: 25px;
+    }
+
+    .images {
+        width: 50%;
+        height: 100%;
+    }
+
+    .images h2 {
+      display: none;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0px;
+        height: 80%;
+        width: 50%;
+       font-size: 20px;
+        padding-right: 70px;
+        
+    }
+
+    .infos h1 {
+        display: block;
+    }
+
+    .buttons {
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .buttons button {
+        padding: 8px;
+    }
+
+    .img-slider {
+        width: 50%;
+    }
+
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttons {
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    .card {
+        width: 75%;
+        height: 100%;
+		justify-content: center;
+    }
+
+        #shopping i {
+        font-size: 30px;
+    }
+
+}
+
+.sidebarlogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
